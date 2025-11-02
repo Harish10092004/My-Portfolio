@@ -37,10 +37,10 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>ServiceNow Developer</h3>
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                Developed and customized ServiceNow applications, automated workflows, and integrated modules to enhance business process efficiency.
+
               </p>
             </div>
           </li>

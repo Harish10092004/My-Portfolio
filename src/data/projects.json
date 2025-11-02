@@ -1,26 +1,35 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Compliant Resolution and Workflow Management Web Application",
+    "imageSrc": "projects/cms.jpeg",
+    "description": "Web system automates complaint approvals, task assignments, and tracks infrastructure issue resolutions.",
+    "skills": ["JavaScript","jQuery","PHP","MySQL","Bootstrap"],
+    
+    "source": "https://github.com/Harish10092004/Complaint_Management_System"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Scalable Role-Based Task Assignment and Progress Management System",
+
+    "imageSrc": "projects/taskmanager.png",
+    "description": "A task management system that allows officials to assign tasks, monitor deadlines, and manage user access through role-based controls.",
+    "skills": ["Laravel", "JavaScript", "Bootstrap", "jQuery"],
+    
+    "source": "https://github.com/Harish10092004/Task_Manager"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Technology Innovation Hub website",
+    "imageSrc": "projects/TIH.png",
+    "description": "A responsive static website to showcase TIH’s vision, mission, objectives, Outcomes, Roadmap and research contributions.",
+    "skills": ["HTML", "Bootstrap", "JavaScript","CSS"],
+    
+    "source": "https://github.com/Harish10092004/TIH"
+  },
+   {
+    "title": "Smart Hotel Service Request Management App",
+    "imageSrc": "projects/servicesavvy.jpg",
+    "description": "Built a ServiceNow Hotel Request app automating requests, SLAs, and feedback to boost efficiency and satisfaction.",
+    "skills": ["Service portal", "Flow designer", "Performance analytics"],
+    
+    "source": "https://github.com/Harish10092004/TIH"
   }
 ]

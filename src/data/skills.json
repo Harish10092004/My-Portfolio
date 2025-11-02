@@ -8,23 +8,29 @@
     "imageSrc": "skills/css.png"
   },
   {
+    "title": "JavaScript",
+    "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "skills/mysql.png"
+  },
+
+  {
     "title": "React",
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
+    "title": "PHP",
+    "imageSrc": "skills/php.png"
+  },
+ 
+  {
+    "title": "Laravel",
+    "imageSrc": "skills/laravel.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
-  },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "ServiceNow",
+    "imageSrc": "skills/servicelogo.png"
   }
 ]

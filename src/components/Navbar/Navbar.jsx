@@ -36,11 +36,12 @@ export const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#achievements">Achivements</a>
           </li>
           <li>
-            <a href="#Achivements">Achivements</a>
+            <a href="#contact">Contact</a>
           </li>
+          
         </ul>
       </div>
     </nav>

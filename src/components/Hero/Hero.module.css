@@ -1,14 +1,15 @@
 @import "../../vars.css";
 
+/* ---------- Base Desktop Layout ---------- */
 .container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 49px;
+  padding-left: 10%;
+  padding-right: 10%;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .content {
@@ -17,6 +18,7 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
+  max-width: 50%;
 }
 
 .title {
@@ -37,6 +39,7 @@
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  line-height: 1.4;
 }
 
 .contactBtn {
@@ -44,16 +47,17 @@
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
-  padding: 17px 26px;
+  padding: 17px 32px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .heroImg {
-  width: 50%;
+  width: 45%;
+  max-width: 500px;
+  border-radius: 50%;
   z-index: 1;
-  border-radius: 100%;
 
   animation-name: floating;
   animation-duration: 3s;
@@ -61,6 +65,7 @@
   animation-timing-function: ease-in-out;
 }
 
+/* Floating animation */
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -73,40 +78,125 @@
   }
 }
 
-.topBlur {
+/* Blur Backgrounds */
+.topBlur,
+.bottomBlur {
   position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
   border-radius: 764px;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
   z-index: 0;
+}
+
+.topBlur {
+  width: 50vw;
+  height: 50vw;
+  top: -128px;
+  left: -10vw;
 }
 
 .bottomBlur {
-  position: absolute;
   width: 70vw;
   height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
   top: 246px;
   right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
 }
 
-@media screen and (max-width: 830px) {
+
+
+/* ---------- Large Laptops (max-width: 1440px) ---------- */
+@media screen and (max-width: 1440px) {
+  .title {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 26px;
+  }
+  .heroImg {
+    width: 40%;
+  }
+}
+
+
+
+/* ---------- Laptops/Tablets Landscape (max-width: 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 22px;
+  }
+
+  .contactBtn {
+    font-size: 22px;
+    padding: 14px 26px;
+  }
+
+  .heroImg {
+    width: 42%;
+  }
+}
+
+
+
+/* ---------- Tablets Portrait (max-width: 768px) ---------- */
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
+    text-align: center;
   }
 
   .content {
     align-items: center;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .heroImg {
+    width: 55%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* ---------- Mobile (max-width: 480px) ---------- */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .contactBtn {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  .heroImg {
+    width: 70%;
   }
 }

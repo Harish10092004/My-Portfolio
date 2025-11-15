@@ -2,10 +2,9 @@
 
 .container {
   margin-top: 76px;
-  color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
-  
+  color: var(--color-text);
 }
 
 .title {
@@ -16,16 +15,43 @@
 }
 
 .projects {
-  margin-top: 37px;
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two cards per row */
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   justify-items: center;
   width: 100%;
-  
 }
-@media (max-width: 768px) {
+
+/* ---------------- Large Screens (≤1440px) ---------------- */
+@media screen and (max-width: 1440px) {
   .projects {
-    grid-template-columns: 1fr; /* single column for mobile */
+    gap: 28px;
+  }
+}
+
+/* ---------------- Laptops/Tablets Landscape (≤1024px) ---------------- */
+@media screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ---------------- Tablets Portrait (≤768px) ---------------- */
+@media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- Mobile Phones (≤480px) ---------------- */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .title {
+    font-size: 28px;
   }
 }
